@@ -1,0 +1,52 @@
+[
+	{
+		"username": "Bewbchandraws",
+		"guild": "The Potatos of Bewb",
+		"channel": "bots",
+		"notification": "Bewb is streaming now!! https://picarto.tv/Bewbchandraws",
+		"online": true,
+		"command": "bewbdraw",
+		"okMessage": "Bewb is drawing this",
+		"failMessage": "Bewb is not streaming!!"
+	},
+	{
+		"username": "SNESFlint",
+		"guild": "The Potatos of Bewb",
+		"channel": "bots",
+		"notification": "SNESFlint is streaming now!! https://picarto.tv/SNESFlint",
+		"online": true,
+		"command": "flintdraw",
+		"okMessage": "SNESFlint is drawing this",
+		"failMessage": "SNESFlint is not streaming!!"
+	},
+	{
+		"username": "Riendonut",
+		"guild": "The Potatos of Bewb",
+		"channel": "bots",
+		"notification": "Riendonut is streaming now!! https://picarto.tv/Riendonut",
+		"online": true,
+		"command": "donutdraw",
+		"okMessage": "Riendonut is drawing this",
+		"failMessage": "Riendonut is not streaming!!"
+	},
+	{
+		"username": "Muffinatur",
+		"guild": "The Potatos of Bewb",
+		"channel": "bots",
+		"notification": "Muffinatur is streaming now!! https://picarto.tv/Muffinatur",
+		"online": true,
+		"command": "muffindraw",
+		"okMessage": "Muffinatur is creating this",
+		"failMessage": "Muffinatur is not streaming!!"
+	},
+	{
+		"username": "N3oma",
+		"guild": "The Potatos of Bewb",
+		"channel": "bots",
+		"notification": "Neoma is streaming now!! https://picarto.tv/N3oma",
+		"online": true,
+		"command": "neomadraw",
+		"okMessage": "Neoma is drawing this",
+		"failMessage": "Neoma is not streaming!!"
+	}
+]
