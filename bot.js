@@ -56,6 +56,7 @@ function init() {
 			if (message.content.toLowerCase().search(user.command) >= 0 && message.author != bot.user ) {
 
 				const { exec } = require('child_process');
+				exec('rm -f '+ user.username +'.png && ffmpeg -timeout 1500000 -i https://1-edge5-us-east.picarto.tv/mp4/'+ user.username +'.mp4 -vframes 1 -vf scale=1280:-1  '+ user.username +'.png', (err, stdout, stderr) => {
 					if (err) {
 						message.channel.send(user.failMessage);
 						console.log(err);
