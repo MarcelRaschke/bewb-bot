@@ -48,5 +48,15 @@
 		"command": "neomadraw",
 		"okMessage": "Neoma is drawing this",
 		"failMessage": "Neoma is not streaming!!"
+	},
+	{
+		"username": "Animalex",
+		"guild": "The Potatos of Bewb",
+		"channel": "bots",
+		"notification": "Animalex debuggin now",
+		"online": true,
+		"command": "anidraw",
+		"okMessage": "Animalex testing this",
+		"failMessage": "Animalex is not streaming!!"
 	}
 ]

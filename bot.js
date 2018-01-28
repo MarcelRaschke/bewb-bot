@@ -15,28 +15,29 @@ function init() {
 			let user = users[i];
 			setInterval(function() {
 				request({
+					uri: 'https://api.picarto.tv/v1/channel/name/' + user.username
 				}, function(error, responce, body) {
 					try {
-						let online = JSON.parse(body).online;
-						let privat = JSON.parse(body).private;
-						if (user.online == false && online == true && privat == false) {
-							user.online = true;
-							bot
-								.guilds.find('name', user.guild)
-								.channels.find('name', user.channel)
-								.send(user.notification);
-						}
+					let online = JSON.parse(body).online;
+					let privat = JSON.parse(body).private;
+					if (user.online == false && online == true && privat == false) {
+						user.online = true;
+						bot
+							.guilds.find('name', user.guild)
+							.channels.find('name', user.channel)
+							.send(user.notification);
+					}
 
-						if (user.online == true && online == false) {
-							user.online = false;
-						}
+					if (user.online == true && online == false) {
+						user.online = false;
+					} 
 					}
 					catch(err) {
 						console.log("SHIT HAPPENS!!:  " + err)
 					}
 				});
 			}
-				,60*1000
+				,30*1000
 			);
 		}
 
@@ -56,7 +57,7 @@ function init() {
 			if (message.content.toLowerCase().search(user.command) >= 0 && message.author != bot.user ) {
 
 				const { exec } = require('child_process');
-				exec('rm -f '+ user.username +'.png && ffmpeg -timeout 1500000 -i https://1-edge5-us-east.picarto.tv/mp4/'+ user.username +'.mp4 -vframes 1 -vf scale=1280:-1  '+ user.username +'.png', (err, stdout, stderr) => {
+				exec('ffmpeg -y -timeout 1500000 -i https://1-edge5-us-east.picarto.tv/mp4/'+ user.username +'.mp4 -vframes 1 '+ user.username +'.png', (err, stdout, stderr) => {
 					if (err) {
 						message.channel.send(user.failMessage);
 						console.log(err);
