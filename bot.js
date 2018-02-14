@@ -22,10 +22,15 @@ function init() {
 					let privat = JSON.parse(body).private;
 					if (user.online == false && online == true && privat == false) {
 						user.online = true;
+						for (let i=0; i < user.server.length; i++) {
+							let sp = user.server[i].split(":");
+							let guild = sp[0];
+							let channel = sp[1];
 						bot
-							.guilds.find('name', user.guild)
-							.channels.find('name', user.channel)
+							.guilds.find('name', guild)
+							.channels.find('name', channel)
 							.send(user.notification);
+						}
 					}
 
 					if (user.online == true && online == false) {
