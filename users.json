@@ -53,10 +53,10 @@
 		"username": "Animalex",
 		"guild": "The Potatos of Bewb",
 		"channel": "bots",
-		"notification": "Animalex debuggin now",
+		"notification": "Animalex is meh :V now!! https://picarto.tv/Animalex",
 		"online": true,
-		"command": "anidraw",
-		"okMessage": "Animalex testing this",
+		"command": "animalexdraw",
+		"okMessage": "Animalex is meh = _= this",
 		"failMessage": "Animalex is not streaming!!"
 	}
 ]
