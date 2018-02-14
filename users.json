@@ -37,7 +37,7 @@
 	},
 	{
 		"username": "N3oma",
-		"server": ["The Potatos of Bewb:bots"],
+		"server": ["The Potatos of Bewb:bots", "The Couch:stream_announcements"],
 		"notification": "Neoma is streaming now!! https://picarto.tv/N3oma",
 		"online": true,
 		"command": "neomadraw",
